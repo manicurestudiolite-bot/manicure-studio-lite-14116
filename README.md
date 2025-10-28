@@ -4,6 +4,35 @@
 
 **URL**: https://lovable.dev/projects/e7d2f5a7-e6ba-4dac-a251-19287431a116
 
+## 🏗️ Estrutura do Projeto
+
+Este projeto consiste em:
+- **Frontend PWA**: React + Vite (pasta raiz)
+- **Backend API**: Node.js + Fastify + Prisma (pasta `/server`)
+
+### Desenvolvimento Local
+
+**Frontend:**
+```sh
+npm install
+npm run dev
+```
+
+**Backend:**
+```sh
+cd server
+npm install
+cp .env.example .env  # Configure suas variáveis
+npm run migrate:dev
+npm run dev
+```
+
+### Deploy no VPS
+
+Para instruções completas de deployment no VPS Ubuntu com PostgreSQL e OpenLiteSpeed, consulte:
+- [`DEPLOYMENT.md`](./DEPLOYMENT.md) - Guia completo de deployment
+- [`server/README.md`](./server/README.md) - Documentação da API
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
