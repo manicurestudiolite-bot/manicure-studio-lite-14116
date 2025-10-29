@@ -51,9 +51,19 @@ export interface Appointment {
   clientId: string;
   serviceId: string;
   startTime: string;
+  endTime: string;
   status: AppointmentStatus;
   notes?: string;
   client?: Client;
+  service?: Service;
+}
+
+export interface ServiceHistory {
+  id: string;
+  clientId: string;
+  serviceId: string;
+  date: string;
+  priceCents: number;
   service?: Service;
 }
 

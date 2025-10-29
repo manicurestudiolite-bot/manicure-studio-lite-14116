@@ -39,6 +39,7 @@ export const api = {
     update: (id: string, data: any) =>
       fetchAPI(`/clients/${id}`, { method: 'PUT', body: JSON.stringify(data) }),
     delete: (id: string) => fetchAPI(`/clients/${id}`, { method: 'DELETE' }),
+    history: (id: string) => fetchAPI(`/clients/${id}/history`),
   },
 
   // Services

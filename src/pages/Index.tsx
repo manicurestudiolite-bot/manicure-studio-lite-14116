@@ -23,6 +23,7 @@ const Dashboard = () => {
         clientId: '1',
         serviceId: '1',
         startTime: new Date().toISOString(),
+        endTime: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
         status: 'PENDENTE',
         client: { id: '1', name: 'Maria Silva', phone: '(11) 99999-9999', createdAt: new Date().toISOString() },
         service: { id: '1', name: 'Manicure Completa', priceCents: 5000, durationMinutes: 60, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
